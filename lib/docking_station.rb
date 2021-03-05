@@ -1,11 +1,13 @@
-class DockingStation
-  def release_bike
-    @bike = Bike.new
-  end
-end
+require_relative 'bike'
 
-class Bike
-  def working?
-    true
+class DockingStation
+
+  def release_bike
+    Bike.new
   end
+
+  def dock(bike)
+
+  end
+
 end
